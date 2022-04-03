@@ -1,0 +1,7 @@
+SSR: server side rendering
+- giao diện trả về nằm ngay ở show page source
+- tốt cho SALE, request đầu tiên nhanh hơn
+- trình duyệt render
+CSR: client side rendering - tăng trải nghiệm người dùng , không reload lại trang
+- server trả về thẻ div trống, có file js để load lại trang(code trả về ít)
+- file js rendering trước

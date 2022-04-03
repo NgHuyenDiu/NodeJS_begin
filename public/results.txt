@@ -1,0 +1,3 @@
+Hello, I learn nodejs on day 1
+hello , my name is Diu
+Im very lazy and stupid

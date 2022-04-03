@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file html </title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+            padding: 30px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>register with id
+        <!-- ejs -->
+        <%= id %>
+    </h1>
+    <p>name:
+        <%= information.name %>
+    </p>
+    <p>age:
+        <%= information.age %>
+    </p>
+    <p>Email:
+        <%= information.email %>
+    </p>
+    <h2>hobbies</h2>
+    <ul>
+        <% information.hobbies.forEach(function(Items){ %>
+            <li>
+                <%= Items %>
+            </li>
+            <%    }); %>
+
+    </ul>
+</body>
+
+</html>

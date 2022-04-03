@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file html </title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+            padding: 30px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include ("./navbar.ejs") %>
+        <h1>Hello</h1>
+        <span><%= data.name %></span>
+        <form action="" id="contact-form">
+            <label for="who">who  do you want to contact</label><br>
+            <input type="text" name="who" placeholder="name"><br>
+            <label for="department">which is department</label><br>
+            <input type="text" name="department" placeholder="department"><br>
+            <label for="email">Your email</label><br>
+            <input type="email" name="email" placeholder="your email"><br>
+            <input type="submit" value="send"><br>
+        </form>
+
+</body>
+
+</html>
